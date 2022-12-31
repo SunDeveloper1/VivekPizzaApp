@@ -1,0 +1,65 @@
+<section class="mx-auto mt-3 container">
+    <h1 class="text-black px-10 font-sans font-extrabold text-3xl ">All Orders</h1>
+    
+    <% if(messages.success) {%>
+        <div class="bg-green-500 py-2  mt-1 ">
+            <h3 class="success-alert px-10 text-gray-100 font-mono font-bold">Order placed successfully !!!</h3>
+        </div>
+        <% } %>
+   
+    <!-- Table -->
+    <div class="flex flex-col">
+        
+                    <% if(orders.length){ %>
+                        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                            <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                              <div class="overflow-hidden">
+                                <table class="min-w-full text-center">
+                                  <thead class="border-b">
+                                    <tr>
+                                      <th scope="col" class="text-sm font-bold text-gray-900 px-4 py-4">
+                                     <a>Order Id</a> 
+                                      </th>
+                                      <th scope="col" class="text-sm font-bold text-gray-900 px-4 py-4">
+                                          <a>Phone Number</a> 
+                                      </th>
+                                      <th scope="col" class="text-sm  font-bold text-gray-900 px-6 py-4">
+                                        Address 
+                                      </th>
+                                      <th scope="col" class="text-sm  font-bold text-gray-900 px-6 py-4">
+                                        Time
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                        <% orders.forEach((order)=>{ %>
+                           
+                            <tr class="border-b bg-purple-100 border-purple-200">
+                                <td class="text-sm font-semibold text-orange-500  px-6 py-4 whitespace-nowrap">
+                                   <a href="/"><%= order._id %></a> 
+                                </td>
+                                <td class="text-sm font-semibold text-gray-900  px-6 py-4 whitespace-nowrap">
+                                    <%=order.phone %>
+                                </td>
+                                <td class="text-sm font-semibold text-gray-900  px-6 py-4 whitespace-nowrap">
+                                  <%= order.address %>
+                                </td>
+                                <td class="text-sm font-semibold text-gray-900  px-6 py-4 whitespace-nowrap">
+                                 <%=moment(order.createdAt).format('hh:mm A') %>
+                                </td>
+                                </tr>
+                           
+                        <% })%>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+                        <% } else{%>
+                            <div class=" mt-20 text-center text-orange-600 font-extrabold text-2xl px-4 py-4"><span>No Orders Placed yet Yet !!!</span></div>
+                        <% }%>
+                 
+                
+      </div>
+    <!-- table -->
+</section>

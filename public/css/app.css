@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css2?family=Poor+Story&display=swap);
+body {
+  background: red;
+  font-weight: bold;
+  height: 4000px;
+}
+
+nav li a {
+  transition: all 0.3s ease-in-out;
+}
+
+section.hero {
+  background-color: #c33535;
+}
+
+.logo {
+  font-family: "Poor Story", cursive;
+}

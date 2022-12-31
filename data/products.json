@@ -1,0 +1,44 @@
+[
+    {
+        "name":"La Mialno Pizzeria",
+        "price":150,
+        "img":"https://b.zmtcdn.com/data/pictures/chains/1/19708611/58e9a8bb27bf7435a139c53b701a722d_o2_featured_v2.jpg?output-format=webp",
+        "size":"medium"
+    },
+    {
+        "name":"The Round Slice",
+        "price":300,
+        "img":"https://b.zmtcdn.com/data/pictures/chains/2/19637192/931a41d9a29cdf45facd2c188ec2365a_o2_featured_v2.jpg",
+        "size":"Big"
+    },
+    {
+        "name":"La Pavio's Pizzaria",
+        "price":320,
+        "img":"",
+        "size":"medium"
+    },
+    {
+        "name":"Pibusa",
+        "price":200,
+        "img":"https://b.zmtcdn.com/data/pictures/chains/1/18603021/85a315765de79046319a6bcdaae3416b_o2_featured_v2.jpg",
+        "size":"medium"
+    },
+    {
+        "name":"Twisted Toppings",
+        "price":100,
+        "img":"https://b.zmtcdn.com/data/pictures/8/19448978/4da51a51b4b0b5b70ded09e5a7aab0c9_o2_featured_v2.jpg",
+        "size":"small"
+    },
+    {
+        "name":"Pizzagram",
+        "price":180,
+        "img":"https://b.zmtcdn.com/data/pictures/1/20391081/c23c404948060cfcebd45c330ef3866b_o2_featured_v2.jpg",
+        "size":"Big"
+    },
+    {
+        "name":"The Pizza People",
+        "price":480,
+        "img":"https://b.zmtcdn.com/data/pictures/6/20380826/a7c1cb53f587398025b078492f30d4b8_o2_featured_v2.jpg",
+        "size":"Big"
+    }
+]
