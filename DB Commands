@@ -1,0 +1,8 @@
+ALTER TABLE ne_master_event ALTER COLUMN master_event_id DROP DEFAULT;
+
+
+ALTER TABLE patient 
+    ALTER master_event_id SET NOT NULL, 
+    ALTER ne_master_event ADD GENERATED ALWAYS AS IDENTITY 
+        (START WITH 500 increment by 1);
+        
